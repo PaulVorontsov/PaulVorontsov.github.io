@@ -1,0 +1,30 @@
+@import "./../../pages/css/style.css";
+
+:root {
+  --slider-bg-color: var(--black);
+  --slider-border-color: var(--bombay);
+}
+
+.slider {
+  width: 90%;
+  margin: 0 auto;
+  background: var(--slider-bg-color);
+  border: 0.25em solid var(--slider-border-color);
+  border-radius: 1em;
+  position: relative;
+  overflow: hidden;
+}
+
+.slider__img {
+  width: 100%;
+  animation: slider ease 2.5s;
+}
+
+@keyframes slider {
+  from {
+    opacity: 0
+  }
+  to {
+    opacity: 1
+  }
+}

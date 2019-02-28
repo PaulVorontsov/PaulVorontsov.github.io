@@ -1,0 +1,37 @@
+@import "./../../pages/css/style.css";
+
+:root {
+  --youtube-icon-color: var(--thunderbird);
+  --youtube-icon-bg-color: var(--white);
+  --video-block-bg-color: var(--alto)
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.video-block {
+  position: absolute;
+  width: 50%;
+  background: var(--video-block-bg-color);
+  border-radius: 0.5em;
+  text-align: center;
+  font-size: 1rem;
+  font-family: Calibri, sans-serif;
+}
+
+.video-block__header {
+  margin: 0 0;
+  padding-bottom: 1em;
+}
+
+.video-block__header i {
+  padding-right: 0.5em;
+  width: 1em;
+  vertical-align: -0.2em;
+  line-height: 1em;
+  font-size: 1.5em;
+  color: var(--youtube-icon-color);
+  transition: 0.2s linear;
+}
