@@ -20,7 +20,7 @@
 }
 
 .navigation__drop-list {
-  display: block;
+  display: none;
   position: absolute;
   border-radius: 0.2em;
 }
@@ -31,7 +31,7 @@ ul[class^="navigation"] {
   list-style-type: none;
 }
 
-.navigation__menu-button {
+.navigation__menu-button, .navigation__button-drop {
   display: inline-block;
   margin-right: 1em;
   padding: 0 0.5em;
@@ -46,7 +46,7 @@ ul[class^="navigation"] {
   font-family: "Trebuchet MS", sans-serif;
 }
 
-a[class^="navigation"] {
+a[class^="navigation"], .navigation__button-drop {
   overflow: hidden;
   max-width: 100%;
   border-radius: 0.2em;
@@ -67,12 +67,16 @@ a[class^="navigation"] {
   font-size: 1rem
 }
 
-a[class^="navigation"]:hover {
+a[class^="navigation"]:hover, .navigation__button-drop:hover {
   color: var(--button-hover-color);
 }
 
-a[class^="navigation"]:active {
+a[class^="navigation"]:active, .navigation__button-drop:active {
   background: linear-gradient(to bottom, var(--button-bg-active-gradient-color));
   box-shadow: none;
   transform: translateY(0.15em);
+}
+
+.navigation__main-list.open .navigation__drop-list {
+  display: block;
 }
