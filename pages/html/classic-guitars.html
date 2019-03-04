@@ -2,22 +2,24 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Title</title>
-    <link rel="stylesheet" href="classic-guitars.css">
+    <link rel="stylesheet" href="./../../pages/css/classic-guitars.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
           integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
   </head>
   <body>
     <header class="main-header">
-      <a class="main-header__logo-link" href="#"><img src="./img/logo-kibin.png" alt="logo-Kibin-guitars"
-                                                      title="Welcom to Kibin guitars!"></a>
+      <a class="main-header__logo-link" href="#"><img src="./../../img/logo-kibin.png" alt="logo-kibin-guitars"
+                                                      title="Welcome to Kibin guitars!"></a>
       <p class="main-header__text-logo">
         Custom made acoustic guitars
       </p>
-      <nav class="navigation">
-        <ul class="navigation__main-list">
+      <nav class="navigation" id="mobile">
+        <a class="navigation__button-mobile-menu" role="button" href="#"><i class="fas fa-bars"></i>Menu</a>
+        <ul class="navigation__main-list" id="menu">
           <li><a class="navigation__menu-button" href="#">Home</a></li>
-          <li><a class="navigation__menu-button" href="#">Guitars<i class="fas fa-angle-down"></i></a>
+          <li><a class="navigation__button-drop" role="button" href="#">Guitars<i class="fas fa-angle-down"></i></a>
             <ul class="navigation__drop-list">
               <li><a class="navigation__sub-menu-button" href="#">Acoustic</a></li>
               <li><a class="navigation__sub-menu-button" href="#">Classic</a></li>
@@ -25,7 +27,7 @@
           </li>
           <li><a class="navigation__menu-button" href="#">Workshop</a></li>
           <li><a class="navigation__menu-button" href="#">Artists</a></li>
-          <li><a class="navigation__menu-button" href="#">Contacts</a></li>
+          <li><a class="navigation__menu-button" href="#">Contact</a></li>
         </ul>
       </nav>
     </header>
@@ -34,13 +36,13 @@
       <section class="classic-guitars">
         <div class="classic-guitars__feature-card">
           <h3 class="classic-guitars__feature-card-header">C-style</h3>
-          <img src="img/c-style.jpg" title="C-style" alt="C-style">
+          <img src="./../../img/feature-card/c-style.jpg" title="C-style" alt="C-style">
           <a class="classic-guitars__feature-card-button" href="#">Read more<i
             class="fas fa-angle-double-right"></i></a>
         </div>
         <div class="classic-guitars__feature-card">
           <h3 class="classic-guitars__feature-card-header">Vintage</h3>
-          <img src="img/vintage.jpg" title="Vintage" alt="Vintage">
+          <img src="./../../img/feature-card/vintage.jpg" title="Vintage" alt="Vintage">
           <a class="classic-guitars__feature-card-button" href="#">Read more<i
             class="fas fa-angle-double-right"></i></a>
         </div>
@@ -56,5 +58,7 @@
         <p class="footer__copyright">© Kibin Guitars, 2019. All rights reserved.</p>
       </div>
     </footer>
+    <script type="text/javascript" src="./../../components/js/drop-menu-mobile.js"></script>
+    <script type="text/javascript" src="./../../components/js/drop-menu.js"></script>
   </body>
 </html>

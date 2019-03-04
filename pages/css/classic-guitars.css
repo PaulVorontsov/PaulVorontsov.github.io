@@ -1,4 +1,6 @@
-@import "./../../project/style.css";
+@import "./../../pages/css/style.css";
+@import "./../../components/css/header.css";
+@import "./../../components/css/footer.css";
 
 :root {
   --header-bg-color: var(--tundora);
@@ -37,122 +39,12 @@ body {
   font-size: 1rem;
 }
 
-.main-header {
-  position: relative;
-  width: 100%;
-  border-bottom: solid 1em var(--header-border-color);
-  border-top: solid 1em var(--header-border-color);
-  background: url("./img/bg-header.jpg") no-repeat;
-  background-size: cover;
-  font-size: 1rem;
-}
-
-.main-header::after {
-  position: absolute;
-  right: 0;
-  left: 0;
-  top: 0;
-  bottom: 0;
-  content: "";
-  background: var(--alto);
-  opacity: 0.35;
-}
-
-.main-header__logo-link {
-  position: relative;
-  margin-left: 4%;
-  z-index: 1;
-}
-
-.main-header__text-logo {
-  position: relative;
-  bottom: 0.2em;
-  margin: 0 4%;
-  letter-spacing: 0.015em;
-  font-weight: 600;
-  font-size: 2em;
-  font-family: "Monotype Corsiva", serif;
-  z-index: 1;
-}
-
-.navigation {
-  position: absolute;
-  right: 4%;
-  top: 5em;
-  margin: 0;
-  padding: 0;
-  font-size: 1rem;
-  z-index: 1;
-}
-
-.navigation__main-list {
-  display: flex;
-  position: relative;
-}
-
-.navigation__drop-list {
-  display: block;
-  position: absolute;
-  border-radius: 0.2em;
-}
-
-ul[class^="navigation"] {
-  margin: 0;
-  padding: 0;
-  list-style-type: none;
-}
-
-.navigation__menu-button {
-  display: inline-block;
-  margin-right: 1em;
-  padding: 0 0.5em;
-  text-transform: uppercase;
-}
-
-.navigation__sub-menu-button {
-  display: none;
-  margin: 0.4em 0 0;
-  padding: 0 1.9em 0 0.55em;
-  font-family: "Trebuchet MS", sans-serif;
-}
-
-a[class^="navigation"] {
-  overflow: hidden;
-  max-width: 100%;
-  border-radius: 0.2em;
-  box-shadow: 0.2em 0.3em 0.5em var(--button-shadow-color);
-  background: linear-gradient(to top, var(--button-bg-gradient-color));
-  color: var(--button-text-color);
-  text-decoration: none;
-  letter-spacing: 0.035em;
-  line-height: 2em;
-  font-size: 1rem;
-  font-weight: 600;
-  transition: 0.2s;
-  cursor: pointer;
-}
-
-.fa-angle-down {
-  padding-left: 0.3em;
-  font-size: 1rem
-}
-
-a[class^="navigation"]:hover {
-  color: var(--button-hover-color);
-}
-
-a[class^="navigation"]:active {
-  background: linear-gradient(to bottom, var(--button-bg-active-gradient-color));
-  box-shadow: none;
-  transform: translateY(0.15em);
-}
-
 .wrapper {
   position: relative;
   margin: 0;
   padding: 0;
   text-align: center;
-  background: url("./img/bg-section.jpg") no-repeat;
+  background: url("./../../img/bg-section.jpg") no-repeat;
   background-size: cover;
 }
 
@@ -174,7 +66,7 @@ a[class^="navigation"]:active {
   top: 0;
   bottom: 0;
   content: "";
-  background: url("./img/pattern.png");
+  background: url("./../../img/pattern.png");
   opacity: 0.2;
 }
 
@@ -263,103 +155,30 @@ a[class^="navigation"]:active {
   z-index: 1;
 }
 
-.footer {
-  width: 100%;
-  background: var(--footer-bg-color);
-  font-size: 1rem;
-}
+@media screen and (max-width: 780px) {
 
-.media-icons {
-  box-sizing: border-box;
-  text-align: center;
-}
-
-.media-icons__header {
-  margin: 0;
-  padding-top: 0.5em;
-  color: var(--media-icons-header-color);
-  font-size: 1.5em;
-}
-
-.media-icons__facebook {
-  color: var(--facebook-icon-color);
-}
-
-.media-icons__vk {
-  color: var(--vk-icon-color);
-}
-
-.media-icons__youtube {
-  color: var(--youtube-icon-color);
-}
-
-.media-icons a {
-  display: inline-block;
-  overflow: hidden;
-  position: relative;
-  margin: 0.625em;
-  width: 2.5em;
-  height: 2.5em;
-  border-radius: 50%;
-  transition: 0.2s;
-}
-
-.media-icons i {
-  line-height: 1.5;
-  font-size: 1.7em;
-  transition: 0.3s;
-}
-
-.media-icons__facebook:hover {
-  background: var(--facebook-icon-hover-bg-color);
-}
-
-.media-icons__vk:hover {
-  background: var(--vk-icon-hover-bg-color);
-}
-
-.media-icons__youtube:hover {
-  background: var(--youtube-icon-hover-bg-color);
-}
-
-.media-icons a:hover i {
-  color: var(--icons-hover-color);
-  transform: scale(0.75);
-}
-
-.footer__copyright {
-  margin: 0;
-  padding-bottom: 0.5em;
-  padding-top: 2em;
-  color: var(--footer-copyright-color);
-  font-weight: 600;
-}
-
-@media (max-width: 1000px) {
-
-  .navigation {
-    position: absolute;
-    right: 0;
-    top: 3.3em
+  .wrapper {
+    margin-top: 5em;
   }
 
-  .main-header__logo-link {
-    position: relative;
-    margin-left: 1%;
+  .classic-guitars {
+    width: 18em;
   }
 
-  .main-header__text-logo {
-    position: relative;
-    margin: 0 1%;
-    font-size: 1.5em;
+  .classic-guitars__feature-card {
+    margin: 3.3em;
   }
 
-  .main-header img {
-    width: 280px;
-    height: 65px;
+  .classic-guitars__feature-card-header {
+    font-size: 1.45em;
   }
 
-  .navigation__menu-button {
-    padding: 0 0.3em;
+  .classic-guitars__feature-card img {
+    width: 11.6em;
+    height: 17.5em;
+  }
+
+  .classic-guitars__feature-card-button {
+    font-size: 1.4em;
   }
 }
