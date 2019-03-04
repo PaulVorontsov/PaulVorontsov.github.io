@@ -62,7 +62,7 @@ body {
   margin: 0;
   padding: 0;
   font-size: 1rem;
-  z-index: 1;
+  z-index: 2;
 }
 
 .navigation__button-mobile-menu {
@@ -134,7 +134,7 @@ a[class^="navigation"]:active, .navigation__button-drop:active {
   display: block;
 }
 
-@media (max-width: 1000px) {
+@media screen and (max-width: 1000px) {
 
   .navigation {
     position: absolute;
@@ -163,15 +163,16 @@ a[class^="navigation"]:active, .navigation__button-drop:active {
   }
 }
 
-@media (max-width: 780px) {
+@media screen and (max-width: 780px) {
 
   .main-header {
-    position: relative;
+    height: 6em;
     text-align: center;
   }
 
   .navigation {
-    top: 7em;
+    position: inherit;
+    top: 1em;
     width: 100%;
   }
 
