@@ -23,6 +23,10 @@
   color: var(--video-block-header-color);
 }
 
+.video-block__header i:hover {
+  opacity: 1;
+}
+
 .video-block__header i {
   padding-right: 0.5em;
   width: 1em;
@@ -31,6 +35,7 @@
   font-size: 1.5em;
   color: var(--youtube-icon-color);
   transition: 0.2s linear;
+  opacity: 0.3;
 }
 
 .video-block__sub-header {
