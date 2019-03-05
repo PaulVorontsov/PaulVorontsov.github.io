@@ -10,11 +10,16 @@
 }
 
 .block-cards {
+  margin: 10em auto;
   display: flex;
   justify-content: space-around;
   flex-flow: wrap;
+  width: 80%;
   height: auto;
+  border-radius: 0.5em;
   background: var(--alto);
+  opacity: 0.8;
+  z-index: 1;
 }
 
 .card-new {
@@ -52,17 +57,13 @@
 .card-new__ribbon:before {
   top: -0.4em;
   left: 0;
-  height: 0;
-  width: 0;
   border-bottom: 0.4em solid black;
   border-left: 0.55em solid transparent;
 }
 
 .card-new__ribbon:after {
   top: 0;
-  right: -1em;
-  height: 0;
-  width: 0;
+  right: -0.98em;
   border-top: 1.5em solid transparent;
   border-bottom: 1.5em solid transparent;
   border-left: 1em solid red;

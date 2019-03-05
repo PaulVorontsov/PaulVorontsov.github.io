@@ -1,24 +1,24 @@
 @import "./../../pages/css/style.css";
 
 :root {
-  --news-block-bg-color: var(--alto)
+  --news-block-bg-color: var(--alto);
+  --news-block-header-color: var(--alto);
 }
 
 .news-block {
-  width: 45%;
+  width: 31.5em;
   font-size: 1rem;
-  font-family: Calibri, sans-serif;
   text-align: center;
   z-index: 1;
 }
 
 .news-block__header {
   margin: 0;
-  padding-top: 3em;
-  padding-bottom: 1em;
-  color: var(--alto);
+  padding-top: 4em;
+  padding-bottom: 4em;
+  color: var(--news-block-header-color);
 }
 
 .news-block img {
-  width: 80%;
+  width: 100%;
 }

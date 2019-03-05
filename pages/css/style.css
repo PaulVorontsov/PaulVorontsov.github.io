@@ -3,6 +3,7 @@
 @import "./../../components/css/slider.css";
 @import "./../../components/css/video-block.css";
 @import "./../../components/css/news-block.css";
+@import "./../../components/css/block-cards.css";
 
 :root {
   --white: #FFFFFF;
@@ -29,10 +30,10 @@ body {
 
 .title {
   position: relative;
-  left: 5%;
+  left: 25%;
   margin: 0;
   padding-bottom: 0.5em;
-  background: var(--black);
+  display: inline-block;
   color: var(--bombay);
   font-size: 3em;
   animation: move 8s;
@@ -40,14 +41,22 @@ body {
 }
 
 @keyframes move {
-  from {left: -40%;}
-  to {left: 5%;}
+  from {
+    opacity: 0;
+    left: -40%;
+  }
+  to {
+    opacity: 1;
+    left: 25%;
+  }
 }
 
 .wrap {
   position: relative;
   display: flex;
   justify-content: space-around;
+  flex-flow: wrap;
+  height: auto;
   margin: 0;
   padding: 0;
   text-align: center;
@@ -75,4 +84,22 @@ body {
   content: "";
   background: url("./../../img/pattern.png");
   opacity: 0.2;
+}
+
+@media screen and (max-width: 1000px) {
+
+  .title {
+    font-size: 2em;
+  }
+}
+
+@media screen and (max-width: 780px) {
+
+  .slider {
+    margin-top: 5em;
+  }
+
+  .title {
+    display: none;
+  }
 }

@@ -10,13 +10,13 @@
   </head>
   <body>
     <header class="main-header">
-      <a class="main-header__logo-link" href="#"><img src="./img/logo-kibin.png" alt="logo-kibin-guitars"
-                                                      title="Welcome to Kibin guitars!"></a>
+      <a class="main-header__logo-link" href="./index.html"><img src="./img/logo-kibin.png" alt="logo-kibin-guitars"
+                                                                 title="Welcome to Kibin guitars!"></a>
       <p class="main-header__text-logo">
         Custom made acoustic guitars
       </p>
       <nav class="navigation" id="mobile">
-        <a class="navigation__button-mobile-menu" role="button" href="./index.html"><i class="fas fa-bars"></i>Menu</a>
+        <a class="navigation__button-mobile-menu" role="button" href="#"><i class="fas fa-bars"></i>Menu</a>
         <ul class="navigation__main-list" id="menu">
           <li><a class="navigation__menu-button" href="./index.html">Home</a></li>
           <li><a class="navigation__button-drop" role="button" href="#">Guitars<i class="fas fa-angle-down"></i></a>
@@ -41,30 +41,48 @@
       <img class="slider__img" src="./img/slider/slide6.jpg" alt="slide6" title="Kibin-guitars">
       <img class="slider__img" src="./img/slider/slide7.jpg" alt="slide7" title="Kibin-guitars">
     </div>
-    <section class="wrap">
-      <div class="video-block">
+    <div class="wrap">
+      <section class="video-block">
         <h2 class="video-block__header"><a class="video-block__link"
                                            href="https://www.youtube.com/channel/UCu4EcnQ_AbBVIf9OwMyxmxA"
                                            title="Youtube channel"><i class="fab fa-youtube-square"></i></a>Visit our
           youtube channel</h2>
-        <h3>Tommy Emmanuel trying out a Kibin guitar</h3>
-        <iframe width="80%" height="300" src="https://www.youtube.com/embed/iWANCyRpxCo" frameborder="0"
+        <h3 class="video-block__sub-header">How Belarusian acoustic guitars are made</h3>
+        <iframe src="https://www.youtube.com/embed/bybHRvhs_Yc" frameborder="0"
                 allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                 allowfullscreen></iframe>
-        <h3>Adam Rafferty</h3>
-        <iframe width="80%" height="300" src="https://www.youtube.com/embed/UgvoWhBZd1A" frameborder="0"
+        <h3 class="video-block__sub-header">Tommy Emmanuel trying out a Kibin guitar</h3>
+        <iframe src="https://www.youtube.com/embed/iWANCyRpxCo" frameborder="0"
                 allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                 allowfullscreen></iframe>
-      </div>
-      <div class="news-block">
+        <h3 class="video-block__sub-header">Adam Rafferty</h3>
+        <iframe src="https://www.youtube.com/embed/UgvoWhBZd1A" frameborder="0"
+                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+      </section>
+      <section class="news-block">
         <h2 class="news-block__header">Visiting Kibin Guitars</h2>
-        <img src="./img/news.jpg" alt="В мастерской" title="В мастерской">
-        <h2 class="news-block__header">How Belarusian acoustic guitars are made</h2>
-        <iframe width="80%" height="300" src="https://www.youtube.com/embed/bybHRvhs_Yc" frameborder="0"
-                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen></iframe>
-      </div>
-    </section>
+        <img src="./img/news.jpg" alt="In workshop" title="In workshop">
+        <img src="./img/guitars.jpg" alt="Guitars in workshop" title="Guitars in workshop">
+      </section>
+      <section class="block-cards">
+        <div class="card-new">
+          <span class="card-new__ribbon">New in<br>standard<br>series</span>
+          <img src="./img/card-new/standard-new.jpg" title="Standard series" alt="Standard series">
+          <a class="card-new__button" href="#">Read more<i class="fas fa-angle-double-right"></i></a>
+        </div>
+        <div class="card-new">
+          <span class="card-new__ribbon">New in<br>vintage<br>series</span>
+          <img src="./img/card-new/vintage-new.jpg" title="Vintage series" alt="Vintage series">
+          <a class="card-new__button" href="#">Read more<i class="fas fa-angle-double-right"></i></a>
+        </div>
+        <div class="card-new">
+          <span class="card-new__ribbon">New in<br>D-style<br>series</span>
+          <img src="./img/card-new/d-style-new.jpg" title="D-style series" alt="D-style series">
+          <a class="card-new__button" href="#">Read more<i class="fas fa-angle-double-right"></i></a>
+        </div>
+      </section>
+    </div>
     <footer class="footer">
       <div class="media-icons">
         <h3 class="media-icons__header">Join us!</h3>

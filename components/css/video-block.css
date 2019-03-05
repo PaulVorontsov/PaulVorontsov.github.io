@@ -1,18 +1,13 @@
 @import "./../../pages/css/style.css";
 
 :root {
+  --video-block-header-color: var(--alto);
   --youtube-icon-color: var(--thunderbird);
-  --youtube-icon-bg-color: var(--white);
-  --video-block-bg-color: var(--alto)
-}
-
-body {
-  margin: 0;
-  padding: 0;
+  --video-block-bg-color: var(--alto);
 }
 
 .video-block {
-  width: 45%;
+  width: 30em;
   text-align: center;
   font-size: 1rem;
   font-family: Calibri, sans-serif;
@@ -22,8 +17,10 @@ body {
 .video-block__header {
   margin: 0;
   padding-top: 4em;
-  padding-bottom: 1em;
-  color: var(--alto);
+}
+
+.video-block__header, .video-block__sub-header {
+  color: var(--video-block-header-color);
 }
 
 .video-block__header i {
@@ -36,6 +33,6 @@ body {
   transition: 0.2s linear;
 }
 
-.video-block h3 {
-  color: var(--alto);
+.video-block__sub-header {
+  padding-top: 3em;
 }
