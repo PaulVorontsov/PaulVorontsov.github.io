@@ -1,15 +1,24 @@
 @import "./../../pages/css/style.css";
 
+:root {
+  --news-block-bg-color: var(--alto)
+}
+
 .news-block {
+  width: 45%;
   font-size: 1rem;
   font-family: Calibri, sans-serif;
-  width: 50%;
   text-align: center;
+  z-index: 1;
 }
 
 .news-block__header {
   margin: 0;
   padding-top: 3em;
   padding-bottom: 1em;
+  color: var(--alto);
 }
 
+.news-block img {
+  width: 80%;
+}

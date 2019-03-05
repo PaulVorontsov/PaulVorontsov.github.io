@@ -2,10 +2,80 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8">
-    <title>Title</title>
-    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Kibin guitars</title>
+    <link rel="stylesheet" href="./pages/css/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+          integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
   </head>
   <body>
-    
+    <header class="main-header">
+      <a class="main-header__logo-link" href="#"><img src="./img/logo-kibin.png" alt="logo-kibin-guitars"
+                                                      title="Welcome to Kibin guitars!"></a>
+      <p class="main-header__text-logo">
+        Custom made acoustic guitars
+      </p>
+      <nav class="navigation" id="mobile">
+        <a class="navigation__button-mobile-menu" role="button" href="./index.html"><i class="fas fa-bars"></i>Menu</a>
+        <ul class="navigation__main-list" id="menu">
+          <li><a class="navigation__menu-button" href="./index.html">Home</a></li>
+          <li><a class="navigation__button-drop" role="button" href="#">Guitars<i class="fas fa-angle-down"></i></a>
+            <ul class="navigation__drop-list">
+              <li><a class="navigation__sub-menu-button" href="./pages/html/acoustic-guitars.html">Acoustic</a></li>
+              <li><a class="navigation__sub-menu-button" href="./pages/html/classic-guitars.html">Classic</a></li>
+            </ul>
+          </li>
+          <li><a class="navigation__menu-button" href="#">Workshop</a></li>
+          <li><a class="navigation__menu-button" href="#">Artists</a></li>
+          <li><a class="navigation__menu-button" href="./pages/html/contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <h1 class="title">Welcome to Kibin guitars!</h1>
+    <div class="slider">
+      <img class="slider__img" src="./img/slider/slide1.jpg" alt="slide1" title="Kibin-guitars">
+      <img class="slider__img" src="./img/slider/slide2.jpg" alt="slide2" title="Kibin-guitars">
+      <img class="slider__img" src="./img/slider/slide3.jpg" alt="slide3" title="Kibin-guitars">
+      <img class="slider__img" src="./img/slider/slide4.jpg" alt="slide4" title="Kibin-guitars">
+      <img class="slider__img" src="./img/slider/slide5.jpg" alt="slide5" title="Kibin-guitars">
+      <img class="slider__img" src="./img/slider/slide6.jpg" alt="slide6" title="Kibin-guitars">
+      <img class="slider__img" src="./img/slider/slide7.jpg" alt="slide7" title="Kibin-guitars">
+    </div>
+    <section class="wrap">
+      <div class="video-block">
+        <h2 class="video-block__header"><a class="video-block__link"
+                                           href="https://www.youtube.com/channel/UCu4EcnQ_AbBVIf9OwMyxmxA"
+                                           title="Youtube channel"><i class="fab fa-youtube-square"></i></a>Visit our
+          youtube channel</h2>
+        <h3>Tommy Emmanuel trying out a Kibin guitar</h3>
+        <iframe width="80%" height="300" src="https://www.youtube.com/embed/iWANCyRpxCo" frameborder="0"
+                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+        <h3>Adam Rafferty</h3>
+        <iframe width="80%" height="300" src="https://www.youtube.com/embed/UgvoWhBZd1A" frameborder="0"
+                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+      </div>
+      <div class="news-block">
+        <h2 class="news-block__header">Visiting Kibin Guitars</h2>
+        <img src="./img/news.jpg" alt="В мастерской" title="В мастерской">
+        <h2 class="news-block__header">How Belarusian acoustic guitars are made</h2>
+        <iframe width="80%" height="300" src="https://www.youtube.com/embed/bybHRvhs_Yc" frameborder="0"
+                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="media-icons">
+        <h3 class="media-icons__header">Join us!</h3>
+        <a class="media-icons__facebook" href="" title="Join us to facebook!"><i class="fab fa-facebook-f"></i></a>
+        <a class="media-icons__vk" href="" title="Contact us on VK!"><i class="fab fa-vk"></i></a>
+        <a class="media-icons__youtube" href="" title="Watch our youtube channel!"><i class="fab fa-youtube"></i></a>
+        <p class="footer__copyright">© Kibin Guitars, 2019. All rights reserved.</p>
+      </div>
+    </footer>
+    <script type="text/javascript" src="./components/js/drop-menu-mobile.js"></script>
+    <script type="text/javascript" src="./components/js/drop-menu.js"></script>
+    <script type="text/javascript" src="./components/js/slider.js"></script>
   </body>
 </html>

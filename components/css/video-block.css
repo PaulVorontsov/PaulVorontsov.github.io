@@ -12,18 +12,18 @@ body {
 }
 
 .video-block {
-  position: absolute;
-  width: 50%;
-  background: var(--video-block-bg-color);
-  border-radius: 0.5em;
+  width: 45%;
   text-align: center;
   font-size: 1rem;
   font-family: Calibri, sans-serif;
+  z-index: 1;
 }
 
 .video-block__header {
-  margin: 0 0;
+  margin: 0;
+  padding-top: 4em;
   padding-bottom: 1em;
+  color: var(--alto);
 }
 
 .video-block__header i {
@@ -34,4 +34,8 @@ body {
   font-size: 1.5em;
   color: var(--youtube-icon-color);
   transition: 0.2s linear;
+}
+
+.video-block h3 {
+  color: var(--alto);
 }
