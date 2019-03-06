@@ -1,0 +1,87 @@
+@import "./../../pages/css/style.css";
+@import "./../../components/css/header.css";
+@import "./../../components/css/footer.css";
+
+:root {
+  --workshop-title-color: var(--alto);
+  --workshop-sub-title-color: var(--alto);
+  --workshop-after-bg-color: var(--black);
+  --workshop-text-color: var(--alto);
+}
+
+.workshop {
+  position: relative;
+  background: url("./../../img/bg-workshop.jpg");
+  background-size: cover;
+  text-align: center;
+}
+
+.workshop:before {
+  background: url("./../../img/pattern.png");
+  opacity: 0.3;
+}
+
+.workshop:after {
+  background: var(--workshop-after-bg-color);
+  opacity: 0.8;
+}
+
+.workshop:before, .workshop:after {
+  position: absolute;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  top: 0;
+  content: "";
+}
+
+.workshop__title {
+  margin: 0;
+  position: relative;
+  color: var(--workshop-title-color);
+  font-size: 2.5em;
+  letter-spacing: 0.04em;
+  line-height: 3;
+  z-index: 1;
+}
+
+.workshop__sub-title {
+  margin: 0;
+  position: relative;
+  font-size: 2em;
+  line-height: 3;
+  font-weight: 500;
+  color: var(--workshop-sub-title-color);
+  z-index: 1;
+}
+
+.workshop__text {
+  margin: 0;
+  padding: 0 3em;
+  position: relative;
+  color: var(--workshop-text-color);
+  line-height: 2;
+  letter-spacing: 0.01em;
+  word-spacing: 0.15em;
+  font-size: 1.7em;
+  z-index: 1;
+}
+
+.workshop__bottom-picture {
+  width: 100%;
+}
+
+@media screen and (max-width: 780px) {
+
+  .workshop {
+    padding-top: 5em;
+  }
+
+  .workshop__text {
+    padding: 0 1em;
+  }
+
+  .workshop__text img {
+    width: 95%;
+  }
+}
