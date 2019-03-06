@@ -3,25 +3,15 @@
 :root {
   --header-bg-color: var(--tundora);
   --header-logo-bg-color: var(--bombay);
-  --header-border-color: var(--black);
-  --button-text-color: var(--black);
-  --button-shadow-color: var(--black);
   --button-bg-gradient-color: var(--jumbo), var(--bombay), var(--alto);
-  --button-hover-color: var(--white);
   --button-bg-active-gradient-color: var(--bombay), var(--jumbo), var(--alto);
-}
-
-body {
-  margin: 0;
-  padding: 0;
-  font-family: Calibri, sans-serif;
 }
 
 .main-header {
   position: relative;
   width: 100%;
-  border-bottom: solid 1em var(--header-border-color);
-  border-top: solid 1em var(--header-border-color);
+  border-bottom: solid 1em black;
+  border-top: solid 1em black;
   background: url("./../../img/bg-header.jpg") no-repeat;
   background-size: cover;
   font-size: 1rem;
@@ -103,9 +93,9 @@ a[class^="navigation"], .navigation__button-drop {
   overflow: hidden;
   max-width: 100%;
   border-radius: 0.2em;
-  box-shadow: 0 0.2em 0.3em var(--button-shadow-color);
+  box-shadow: 0 0.2em 0.3em black;
   background: linear-gradient(to top, var(--button-bg-gradient-color));
-  color: var(--button-text-color);
+  color: black;
   text-decoration: none;
   letter-spacing: 0.035em;
   line-height: 2em;
@@ -121,7 +111,7 @@ a[class^="navigation"], .navigation__button-drop {
 }
 
 a[class^="navigation"]:hover, .navigation__button-drop:hover {
-  color: var(--button-hover-color);
+  color: white;
 }
 
 a[class^="navigation"]:active, .navigation__button-drop:active {

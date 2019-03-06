@@ -1,10 +1,8 @@
 @import "./../../pages/css/style.css";
 
 :root {
-  --button-text-color: var(--black);
   --button-shadow-color: var(--tundora);
   --button-bg-gradient-color: var(--jumbo), var(--bombay), var(--alto);
-  --button-hover-color: var(--white);
   --button-bg-active-gradient-color: var(--bombay), var(--jumbo), var(--alto);
 }
 
@@ -17,7 +15,7 @@
   border-radius: 0.2em;
   box-shadow: 0 0.2em 0.3em var(--button-shadow-color);
   background: linear-gradient(to top, var(--button-bg-gradient-color));
-  color: var(--button-text-color);
+  color: black;
   text-decoration: none;
   text-transform: uppercase;
   letter-spacing: 0.035em;
@@ -35,7 +33,7 @@
 }
 
 .menu-button:hover {
-  color: var(--button-hover-color);
+  color: white;
 }
 
 .menu-button:active {

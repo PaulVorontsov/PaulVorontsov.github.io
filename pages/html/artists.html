@@ -9,6 +9,84 @@
           integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
   </head>
   <body>
-    
+    <header class="main-header">
+      <a class="main-header__logo-link" href="./../../index.html"><img src="./../../img/logo-kibin.png"
+                                                                       alt="logo-kibin-guitars"
+                                                                       title="Welcome to Kibin guitars!"></a>
+      <p class="main-header__text-logo">
+        Custom made acoustic guitars
+      </p>
+      <nav class="navigation" id="mobile">
+        <a class="navigation__button-mobile-menu" role="button" href="#"><i class="fas fa-bars"></i>Menu</a>
+        <ul class="navigation__main-list" id="menu">
+          <li><a class="navigation__menu-button" href="./../../index.html">Home</a></li>
+          <li><a class="navigation__button-drop" role="button" href="#">Guitars<i class="fas fa-angle-down"></i></a>
+            <ul class="navigation__drop-list">
+              <li><a class="navigation__sub-menu-button" href="./../../pages/html/acoustic-guitars.html">Acoustic</a>
+              </li>
+              <li><a class="navigation__sub-menu-button" href="./../../pages/html/classic-guitars.html">Classic</a></li>
+            </ul>
+          </li>
+          <li><a class="navigation__menu-button" href="./../../pages/html/workshop.html">Workshop</a></li>
+          <li><a class="navigation__menu-button" href="./../../pages/html/artists.html">Artists</a></li>
+          <li><a class="navigation__menu-button" href="./../../pages/html/contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <section class="artists">
+      <h1 class="artists__title">Artists</h1>
+      <p class="artists__text">
+        "I have tried millions of guitars in my life. I like the work of Andrei.
+        His guitars sound fantastic and look great."
+        <br><em class="artists__text_colorized-blue">Tommy Emmanuel</em>
+        <br>
+        <br>
+        "For me, Andrei Kibin's guitar is of particular importance. Firstly, while working on the instrument, the
+        master took into account my wishes. Secondly, his guitar helped me to win and become the winner of 10
+        international guitar competitions, such as: The International Competition of Guitarists J. Dyuart in Austria,
+        International Competition of Guitarists, dedicated to L. Brauer in France, International Competition of
+        Guitarists named after A. Frauchi in Russia and other competitions. I am grateful to Andrey for this
+        instrument, which he made especially for me."
+        <br><em class="artists__text_colorized-blue">Pavel Kukhta (Belarusian master of classical guitar)</em>
+        <br>
+        <br>
+        "Andrei Kibin's guitars are like an extension of your hands or some kind of sixth sense, giving you the
+        opportunity to speak in your own recognizable voice. When i play them, i feel like a surfer on a wave."
+        <br><em class="artists__text_colorized-blue">Peter May</em>
+        <br>
+        <br>
+      </p>
+      <div class="artists__gallery">
+        <div>
+          <img class="artists__picture" src="./../../img/artists/tommy-emmanuel.jpg" alt="">
+          <img class="artists__picture" src="./../../img/artists/pavel-kukhta.jpg" alt="">
+          <img class="artists__picture" src="./../../img/artists/nenad-gadzhin.jpg" alt="">
+          <img class="artists__picture" src="./../../img/artists/pavel-lychagin.jpg" alt="">
+        </div>
+        <div>
+          <img class="artists__picture" src="./../../img/artists/man.jpg" alt="">
+          <img class="artists__picture" src="./../../img/artists/manthree.jpg" alt="">
+          <img class="artists__picture" src="./../../img/artists/mantwo.jpg" alt="">
+          <img class="artists__picture" src="./../../img/artists/peter-may-play.jpg" alt="">
+          <img class="artists__picture" src="./../../img/artists/peter-may.jpg" alt="">
+          <img class="artists__picture" src="./../../img/artists/adam-rafferty.jpg" alt="">
+          <img class="artists__picture" src="./../../img/artists/musician.jpg" alt="">
+        </div>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="media-icons">
+        <h3 class="media-icons__header">Join us!</h3>
+        <a class="media-icons__facebook" href="https://www.facebook.com/andrei.kibin" target="_blank"
+           title="Join us to facebook!"><i class="fab fa-facebook-f"></i></a>
+        <a class="media-icons__vk" href="https://vk.com/kibinguitars" target="_blank" title="Contact us on VK!"><i
+          class="fab fa-vk"></i></a>
+        <a class="media-icons__youtube" href="https://www.youtube.com/user/kibinguitars/featured" target="_blank"
+           title="Watch our youtube channel!"><i class="fab fa-youtube"></i></a>
+        <p class="footer__copyright">© Kibin Guitars, 2019. All rights reserved.</p>
+      </div>
+    </footer>
+    <script type="text/javascript" src="./../../components/js/drop-menu-mobile.js"></script>
+    <script type="text/javascript" src="./../../components/js/drop-menu.js"></script>
   </body>
 </html>

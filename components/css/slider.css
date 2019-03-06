@@ -1,20 +1,9 @@
 @import "./../../pages/css/style.css";
 
-:root {
-  --slider-bg-color: var(--black);
-  --slider-border-color: var(--bombay);
-}
-
-body {
-  margin: 0;
-  padding: 0;
-  font-size: 1rem;
-}
-
 .slider {
   width: 100%;
   margin: 0 auto;
-  background: var(--slider-bg-color);
+  background: black;
   position: relative;
   overflow: hidden;
 }

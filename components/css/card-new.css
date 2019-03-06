@@ -2,7 +2,6 @@
 
 :root {
   --card-new-bg-color: var(--bombay);
-  --card-new-button-color: var(--black);
   --card-new-shadow-color: var(--tundora);
   --card-new-border-color: var(--tundora);
   --card-new-button-bg-color: var(--tundora), var(--jumbo), var(--alto);
@@ -69,7 +68,7 @@ body {
   display: block;
   margin: 0.7em 1em 0.8em 1em;
   background: linear-gradient(to top, var(--card-new-button-bg-color));
-  color: var(--card-new-button-color);
+  color: black;
   border-radius: 0.25em;
   text-decoration: none;
   font-size: 1.4em;

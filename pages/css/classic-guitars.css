@@ -3,40 +3,14 @@
 @import "./../../components/css/footer.css";
 
 :root {
-  --header-bg-color: var(--tundora);
-  --header-logo-bg-color: var(--bombay);
-  --header-border-color: var(--black);
-  --button-text-color: var(--black);
-  --button-shadow-color: var(--black);
-  --button-bg-gradient-color: var(--jumbo), var(--bombay), var(--alto);
-  --button-hover-color: var(--white);
-  --button-bg-active-gradient-color: var(--bombay), var(--jumbo), var(--alto);
   --feature-card-bg-color: var(--bombay);
-  --feature-card-header-color: var(--black);
-  --feature-card-button-color: var(--black);
   --feature-card-shadow-color: var(--tundora);
   --feature-card-border-color: var(--tundora);
   --feature-card-button-bg-color: var(--tundora), var(--jumbo), var(--alto);
   --feature-card-button-hover-color: var(--alto);
   --classic-guitars-header-color: var(--alto);
   --classic-guitars-proposal-color: var(--alto);
-  --facebook-icon-color: var(--chambray);
-  --vk-icon-color: var(--wedgewood);
-  --youtube-icon-color: var(--thunderbird);
-  --facebook-icon-hover-bg-color: var(--chambray);
-  --vk-icon-hover-bg-color: var(--wedgewood);
-  --youtube-icon-hover-bg-color: var(--thunderbird);
-  --icons-hover-color: var(--white);
-  --footer-bg-color: var(--black);
-  --media-icons-header-color: var(--bombay);
-  --footer-copyright-color: var(--bombay);
-}
-
-body {
-  margin: 0;
-  padding: 0;
-  font-family: Calibri, sans-serif;
-  font-size: 1rem;
+  --classic-guitars-bg-color: var(--alto);
 }
 
 .wrapper {
@@ -88,7 +62,7 @@ body {
   flex-flow: row wrap;
   height: auto;
   width: 42em;
-  background: var(--alto);
+  background: var(--classic-guitars-bg-color);
   border: solid grey 0.125em;
   border-radius: 0.5em;
   z-index: 1;
@@ -108,7 +82,7 @@ body {
 .classic-guitars__feature-card-header {
   margin: 0;
   box-sizing: border-box;
-  color: var(--feature-card-header-color);
+  color: black;
   font-weight: 600;
   line-height: 1.5em;
   letter-spacing: 0.02em;
@@ -118,7 +92,7 @@ body {
   display: block;
   margin: 0.3em 1em 0.8em 1em;
   background: linear-gradient(to top, var(--feature-card-button-bg-color));
-  color: var(--feature-card-button-color);
+  color: black;
   border-radius: 0.25em;
   text-decoration: none;
   font-size: 1em;
@@ -158,7 +132,7 @@ body {
 @media screen and (max-width: 780px) {
 
   .wrapper {
-    margin-top: 5em;
+    padding-top: 5em;
   }
 
   .classic-guitars {

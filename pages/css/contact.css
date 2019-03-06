@@ -3,36 +3,11 @@
 @import "./../../components/css/footer.css";
 
 :root {
-  --header-bg-color: var(--tundora);
-  --header-logo-bg-color: var(--bombay);
-  --header-border-color: var(--black);
-  --button-text-color: var(--black);
-  --button-shadow-color: var(--black);
-  --button-bg-gradient-color: var(--jumbo), var(--bombay), var(--alto);
-  --button-hover-color: var(--white);
-  --button-bg-active-gradient-color: var(--bombay), var(--jumbo), var(--alto);
-  --contacts-haeder-color: var(--bombay);
+  --contacts-header-color: var(--bombay);
+  --contacts-sub-header-color: var(--bombay);
   --icon-address-color: var(--red);
   --icon-phone-color: var(--green);
   --icon-mail-color: var(--electric-violet);
-  --facebook-icon-color: var(--chambray);
-  --vk-icon-color: var(--wedgewood);
-  --youtube-icon-color: var(--thunderbird);
-  --facebook-icon-hover-bg-color: var(--chambray);
-  --vk-icon-hover-bg-color: var(--wedgewood);
-  --youtube-icon-hover-bg-color: var(--thunderbird);
-  --icons-hover-color: var(--white);
-  --footer-bg-color: var(--black);
-  --media-icons-header-color: var(--bombay);
-  --footer-copyright-color: var(--bombay);
-  --contacts-header-color: var(--bombay)
-}
-
-body {
-  margin: 0;
-  padding: 0;
-  font-family: Calibri, sans-serif;
-  font-size: 1rem;
 }
 
 .contacts {
@@ -47,25 +22,22 @@ body {
 }
 
 .contacts:before {
-  position: absolute;
-  right: 0;
-  left: 0;
-  top: 0;
-  bottom: 0;
-  content: "";
   background: black;
   opacity: 0.7;
 }
 
 .contacts:after {
+  background: url("./../../img/pattern.png");
+  opacity: 0.2;
+}
+
+.contacts:before, .contacts:after {
   position: absolute;
   right: 0;
   left: 0;
   top: 0;
   bottom: 0;
   content: "";
-  background: url("./../../img/pattern.png");
-  opacity: 0.2;
 }
 
 .contacts__header {
@@ -74,7 +46,6 @@ body {
   padding-top: 2em;
   padding-bottom: 2em;
   color: var(--contacts-header-color);
-  text-transform: uppercase;
   font-size: 2em;
   z-index: 1;
 }
@@ -86,7 +57,7 @@ body {
 
 h3[class^="contacts"] {
   padding-top: 1em;
-  color: var(--contacts-haeder-color);
+  color: var(--contacts-sub-header-color);
   font-size: 1.5em;
 }
 
@@ -120,6 +91,6 @@ h3[class^="contacts"] {
 @media screen and (max-width: 780px) {
 
   .contacts {
-    margin-top: 5em;
+    padding-top: 5em;
   }
 }

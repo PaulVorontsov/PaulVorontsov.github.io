@@ -7,15 +7,13 @@
   --facebook-icon-hover-bg-color: var(--chambray);
   --vk-icon-hover-bg-color: var(--wedgewood);
   --youtube-icon-hover-bg-color: var(--thunderbird);
-  --icons-hover-color: var(--white);
-  --footer-bg-color: var(--black);
   --media-icons-header-color: var(--bombay);
   --footer-copyright-color: var(--bombay);
 }
 
 .footer {
   width: 100%;
-  background: var(--footer-bg-color);
+  background: black;
   font-size: 1rem;
   font-family: Calibri, sans-serif;
 }
@@ -74,7 +72,7 @@
 }
 
 .media-icons a:hover i {
-  color: var(--icons-hover-color);
+  color: white;
   transform: scale(0.75);
 }
 
