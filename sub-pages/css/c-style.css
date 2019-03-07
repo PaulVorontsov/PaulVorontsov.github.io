@@ -7,7 +7,7 @@
   --a-style-text-color: var(--alto);
 }
 
-.a-style {
+.c-style {
   position: relative;
   text-align: center;
   background: url("./../../img/bg-section.jpg") no-repeat;
@@ -15,17 +15,17 @@
   font-size: 1rem;
 }
 
-.a-style:before {
+.c-style:before {
   background: black;
   opacity: 0.7;
 }
 
-.a-style:after {
+.c-style:after {
   background: url("./../../img/pattern.png");
   opacity: 0.2;
 }
 
-.a-style:before, .a-style:after {
+.c-style:before, .c-style:after {
   position: absolute;
   right: 0;
   left: 0;
@@ -34,7 +34,7 @@
   content: "";
 }
 
-.a-style__title {
+.c-style__title {
   position: relative;
   margin: 0;
   padding-top: 2em;
@@ -44,7 +44,7 @@
   z-index: 1;
 }
 
-.a-style__text {
+.c-style__text {
   margin: 0;
   padding: 5em 1em;
   position: relative;
@@ -56,24 +56,24 @@
   z-index: 1;
 }
 
-.a-style__gallery {
+.c-style__gallery {
   position: relative;
   padding-top: 2em;
   opacity: 0.95;
   z-index: 1;
 }
 
-.a-style__picture {
+.c-style__picture {
   transition: 0.25s linear;
 }
 
-.a-style__picture:hover {
+.c-style__picture:hover {
   transform: scale(1.2);
 }
 
 @media screen and (max-width: 780px) {
 
-  .a-style {
+  .c-style {
     padding-top: 5em;
   }
 }

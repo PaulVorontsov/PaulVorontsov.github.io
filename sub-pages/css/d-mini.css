@@ -7,7 +7,7 @@
   --a-style-text-color: var(--alto);
 }
 
-.a-style {
+.d-mini {
   position: relative;
   text-align: center;
   background: url("./../../img/bg-section.jpg") no-repeat;
@@ -15,17 +15,17 @@
   font-size: 1rem;
 }
 
-.a-style:before {
+.d-mini:before {
   background: black;
   opacity: 0.7;
 }
 
-.a-style:after {
+.d-mini:after {
   background: url("./../../img/pattern.png");
   opacity: 0.2;
 }
 
-.a-style:before, .a-style:after {
+.d-mini:before, .d-mini:after {
   position: absolute;
   right: 0;
   left: 0;
@@ -34,7 +34,7 @@
   content: "";
 }
 
-.a-style__title {
+.d-mini__title {
   position: relative;
   margin: 0;
   padding-top: 2em;
@@ -44,7 +44,7 @@
   z-index: 1;
 }
 
-.a-style__text {
+.d-mini__text {
   margin: 0;
   padding: 5em 1em;
   position: relative;
@@ -56,24 +56,31 @@
   z-index: 1;
 }
 
-.a-style__gallery {
+.d-mini__gallery {
   position: relative;
   padding-top: 2em;
   opacity: 0.95;
   z-index: 1;
 }
 
-.a-style__picture {
+img[class*="picture"] {
   transition: 0.25s linear;
 }
 
-.a-style__picture:hover {
+img[class*="picture"]:hover {
   transform: scale(1.2);
+}
+
+@media screen and (max-width: 1000px) {
+
+  .d-mini__picture_width {
+    width: 90%;
+  }
 }
 
 @media screen and (max-width: 780px) {
 
-  .a-style {
+  .d-mini {
     padding-top: 5em;
   }
 }

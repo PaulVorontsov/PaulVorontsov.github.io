@@ -7,7 +7,7 @@
   --a-style-text-color: var(--alto);
 }
 
-.a-style {
+.a-style-str {
   position: relative;
   text-align: center;
   background: url("./../../img/bg-section.jpg") no-repeat;
@@ -15,17 +15,17 @@
   font-size: 1rem;
 }
 
-.a-style:before {
+.a-style-str:before {
   background: black;
   opacity: 0.7;
 }
 
-.a-style:after {
+.a-style-str:after {
   background: url("./../../img/pattern.png");
   opacity: 0.2;
 }
 
-.a-style:before, .a-style:after {
+.a-style-str:before, .a-style-str:after {
   position: absolute;
   right: 0;
   left: 0;
@@ -34,7 +34,7 @@
   content: "";
 }
 
-.a-style__title {
+.a-style-str__title {
   position: relative;
   margin: 0;
   padding-top: 2em;
@@ -44,7 +44,7 @@
   z-index: 1;
 }
 
-.a-style__text {
+.a-style-str__text {
   margin: 0;
   padding: 5em 1em;
   position: relative;
@@ -56,24 +56,31 @@
   z-index: 1;
 }
 
-.a-style__gallery {
+.a-style-str__gallery {
   position: relative;
   padding-top: 2em;
   opacity: 0.95;
   z-index: 1;
 }
 
-.a-style__picture {
+img[class*="picture"] {
   transition: 0.25s linear;
 }
 
-.a-style__picture:hover {
+img[class*="picture"]:hover {
   transform: scale(1.2);
+}
+
+@media screen and (max-width: 1000px) {
+
+  .a-style-str__picture_width {
+    width: 90%;
+  }
 }
 
 @media screen and (max-width: 780px) {
 
-  .a-style {
+  .a-style-str {
     padding-top: 5em;
   }
 }
