@@ -3,7 +3,7 @@
 @import "./../../components/css/footer.css";
 
 :root {
-  --artists-titel-color: var(--alto);
+  --artists-titel-color: var(--bombay);
   --artists-text-color: var(--alto);
   --artists-text-name-color: var(--electric-violet);
 }

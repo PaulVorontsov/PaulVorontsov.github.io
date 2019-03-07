@@ -3,9 +3,8 @@
 @import "./../../components/css/footer.css";
 
 :root {
-  --workshop-title-color: var(--alto);
+  --workshop-title-color: var(--bombay);
   --workshop-sub-title-color: var(--alto);
-  --workshop-after-bg-color: var(--black);
   --workshop-text-color: var(--alto);
 }
 
@@ -22,7 +21,7 @@
 }
 
 .workshop:after {
-  background: var(--workshop-after-bg-color);
+  background: black;
   opacity: 0.8;
 }
 
@@ -37,16 +36,17 @@
 
 .workshop__title {
   margin: 0;
+  padding-top: 2em;
   position: relative;
   color: var(--workshop-title-color);
-  font-size: 2.5em;
+  font-size: 2em;
   letter-spacing: 0.04em;
-  line-height: 3;
   z-index: 1;
 }
 
 .workshop__sub-title {
   margin: 0;
+  padding-top: 1.5em;
   position: relative;
   font-size: 2em;
   line-height: 3;
