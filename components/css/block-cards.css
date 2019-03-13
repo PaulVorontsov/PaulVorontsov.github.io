@@ -19,6 +19,8 @@
   background: var(--alto);
   opacity: 0.8;
   z-index: 1;
+  transform-style: preserve-3d;
+  perspective: 1000px;
 }
 
 .card-new {
@@ -88,7 +90,7 @@
 
 .card-new:hover {
   box-shadow: 0.8em 0.8em 0.8em var(--card-new-shadow-color);
-  transform: scale(1.04);
+  transform: rotate3d(0, 10, 0, -10deg);
 }
 
 .card-new__button:hover {
