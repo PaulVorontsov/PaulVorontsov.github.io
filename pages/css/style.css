@@ -27,25 +27,31 @@ body {
 }
 
 .title {
-  position: relative;
-  left: 25%;
   margin: 0;
   padding-bottom: 0.5em;
-  display: inline-block;
+  text-align: center;
   color: var(--bombay);
+  word-spacing: 0.5em;
+  letter-spacing: 0.05em;
   font-size: 3em;
-  animation: move 8s;
-  animation-timing-function: ease-in;
+  animation: move 4s ease-out;
 }
 
 @keyframes move {
-  from {
-    opacity: 0;
-    left: -40%;
+  0% {
+    transform: scale(0);
+    word-spacing: 0;
+    letter-spacing: 0;
   }
-  to {
-    opacity: 1;
-    left: 25%;
+  75% {
+    transform: scale(1);
+    word-spacing: 0;
+    letter-spacing: 0;
+  }
+  100% {
+    transform: scale(1);
+    word-spacing: 0.5em;
+    letter-spacing: 0.05em;
   }
 }
 
