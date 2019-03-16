@@ -182,7 +182,7 @@ a[class^="navigation"]:active, .navigation__button-drop:active {
     display: block;
     border-bottom: 0.25em solid black;
     border-radius: 0;
-    line-height: 3em;
+    line-height: 2;
     font-size: 1.5em;
   }
 
