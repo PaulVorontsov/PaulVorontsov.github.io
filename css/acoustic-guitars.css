@@ -1,0 +1,153 @@
+@import "./style.css";
+@import "./main-colors.css";
+@import "./components/header.css";
+@import "./components/footer.css";
+
+:root {
+  --feature-card-bg-color: var(--bombay);
+  --feature-card-shadow-color: var(--tundora);
+  --feature-card-border-color: var(--tundora);
+  --feature-card-button-bg-color: var(--tundora), var(--jumbo), var(--alto);
+  --feature-card-button-hover-color: var(--alto);
+  --acoustic-guitars-header-color: var(--bombay);
+  --acoustic-guitars-proposal-color: var(--alto);
+}
+
+.wrap {
+  margin: 0 auto;
+  position: relative;
+  max-width: 1200px;
+  text-align: center;
+  background: url("./../img/bg-section.jpg") no-repeat;
+  background-size: cover;
+}
+
+.wrap:before {
+  background: black;
+  opacity: 0.7;
+}
+
+.wrap:after {
+  background: url("./../img/pattern.png");
+  opacity: 0.2;
+}
+
+.wrap:before, .wrap:after {
+  position: absolute;
+  right: 0;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  content: "";
+}
+
+.acoustic-guitars__header {
+  position: relative;
+  margin: 0;
+  padding-top: 2em;
+  padding-bottom: 2em;
+  color: var(--acoustic-guitars-header-color);
+  z-index: 1;
+}
+
+.acoustic-guitars {
+  position: relative;
+  margin: 0 auto;
+  display: flex;
+  flex-flow: row wrap;
+  height: auto;
+  width: 42em;
+  background: var(--alto);
+  border: solid grey 0.125em;
+  border-radius: 0.5em;
+  z-index: 1;
+  opacity: 0.8;
+}
+
+.acoustic-guitars__feature-card {
+  margin: 2.3em;
+  box-sizing: border-box;
+  background: var(--feature-card-bg-color);
+  box-shadow: 0.3em 0.4em 1.25em var(--feature-card-shadow-color);
+  border-radius: 0.25em;
+  text-align: center;
+  transition: 0.25s;
+}
+
+.acoustic-guitars__feature-card-header {
+  margin: 0;
+  box-sizing: border-box;
+  color: black;
+  font-weight: 600;
+  line-height: 1.5em;
+  letter-spacing: 0.02em;
+}
+
+.acoustic-guitars__feature-card-button {
+  display: block;
+  margin: 0.3em 1em 0.8em 1em;
+  background: linear-gradient(to top, var(--feature-card-button-bg-color));
+  color: black;
+  border-radius: 0.25em;
+  text-decoration: none;
+  font-size: 1em;
+  font-weight: 600;
+  line-height: 2em;
+  transition: 0.15s;
+}
+
+.fa-angle-double-right {
+  margin-left: 0.3em;
+  vertical-align: -0.1em;
+}
+
+.acoustic-guitars__feature-card:hover {
+  box-shadow: 0.8em 0.8em 0.8em var(--feature-card-shadow-color);
+  transform: scale(1.08);
+}
+
+.acoustic-guitars__feature-card-button:hover {
+  color: var(--feature-card-button-hover-color);
+}
+
+.acoustic-guitars__feature-card-button:active {
+  background: linear-gradient(to bottom, var(--feature-card-button-bg-color));
+  transform: translateY(0.15em);
+}
+
+.acoustic-guitars__proposal {
+  position: relative;
+  margin: 0;
+  padding-top: 2em;
+  padding-bottom: 6em;
+  font-size: 1.2em;
+  color: var(--acoustic-guitars-proposal-color);
+  z-index: 1;
+}
+
+@media screen and (max-width: 780px) {
+  .wrap {
+    padding-top: 5em;
+  }
+
+  .acoustic-guitars {
+    width: 18em;
+  }
+
+  .acoustic-guitars__feature-card {
+    margin: 3.3em;
+  }
+
+  .acoustic-guitars__feature-card-header {
+    font-size: 1.45em;
+  }
+
+  .acoustic-guitars__feature-card img {
+    width: 11.6em;
+    height: 17.5em;
+  }
+
+  .acoustic-guitars__feature-card-button {
+    font-size: 1.4em;
+  }
+}

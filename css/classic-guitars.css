@@ -1,0 +1,156 @@
+@import "./style.css";
+@import "./main-colors.css";
+@import "./components/header.css";
+@import "./components/footer.css";
+
+:root {
+  --feature-card-bg-color: var(--bombay);
+  --feature-card-shadow-color: var(--tundora);
+  --feature-card-border-color: var(--tundora);
+  --feature-card-button-bg-color: var(--tundora), var(--jumbo), var(--alto);
+  --feature-card-button-hover-color: var(--alto);
+  --classic-guitars-header-color: var(--bombay);
+  --classic-guitars-proposal-color: var(--alto);
+  --classic-guitars-bg-color: var(--alto);
+}
+
+.wrap {
+  margin: 0 auto;
+  padding: 0;
+  position: relative;
+  max-width: 1200px;
+  text-align: center;
+  background: url("./../img/bg-section.jpg") no-repeat;
+  background-size: cover;
+}
+
+.wrap:before {
+  background: black;
+  opacity: 0.7;
+}
+
+.wrap:after {
+  background: url("./../img/pattern.png");
+  opacity: 0.2;
+}
+
+.wrap:before, .wrap:after {
+  position: absolute;
+  right: 0;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  content: "";
+}
+
+.classic-guitars__header {
+  position: relative;
+  margin: 0;
+  padding-top: 2em;
+  padding-bottom: 2em;
+  color: var(--classic-guitars-header-color);
+  z-index: 1;
+}
+
+.classic-guitars {
+  position: relative;
+  margin-bottom: 2em;
+  margin-right: auto;
+  margin-left: auto;
+  display: flex;
+  flex-flow: row wrap;
+  height: auto;
+  width: 42em;
+  background: var(--classic-guitars-bg-color);
+  border: solid grey 0.125em;
+  border-radius: 0.5em;
+  z-index: 1;
+  opacity: 0.8;
+}
+
+.classic-guitars__feature-card {
+  margin: 5.3em;
+  box-sizing: border-box;
+  background: var(--feature-card-bg-color);
+  box-shadow: 0.3em 0.4em 1.25em var(--feature-card-shadow-color);
+  border-radius: 0.25em;
+  text-align: center;
+  transition: 0.25s;
+}
+
+.classic-guitars__feature-card-header {
+  margin: 0;
+  box-sizing: border-box;
+  color: black;
+  font-weight: 600;
+  line-height: 1.5em;
+  letter-spacing: 0.02em;
+}
+
+.classic-guitars__feature-card-button {
+  display: block;
+  margin: 0.3em 1em 0.8em 1em;
+  background: linear-gradient(to top, var(--feature-card-button-bg-color));
+  color: black;
+  border-radius: 0.25em;
+  text-decoration: none;
+  font-size: 1em;
+  font-weight: 600;
+  line-height: 2em;
+  transition: 0.15s;
+}
+
+.fa-angle-double-right {
+  margin-left: 0.3em;
+  vertical-align: -0.1em;
+}
+
+.classic-guitars__feature-card:hover {
+  box-shadow: 0.8em 0.8em 0.8em var(--feature-card-shadow-color);
+  transform: scale(1.08);
+}
+
+.classic-guitars__feature-card-button:hover {
+  color: var(--feature-card-button-hover-color);
+}
+
+.classic-guitars__feature-card-button:active {
+  background: linear-gradient(to bottom, var(--feature-card-button-bg-color));
+  transform: translateY(0.15em);
+}
+
+.classic-guitars__proposal {
+  position: relative;
+  margin: 0;
+  padding-bottom: 6em;
+  font-size: 1.2em;
+  color: var(--classic-guitars-proposal-color);
+  z-index: 1;
+}
+
+@media screen and (max-width: 780px) {
+  .wrap {
+    padding-top: 5em;
+  }
+
+  .classic-guitars {
+    width: 18em;
+  }
+
+  .classic-guitars__feature-card {
+    margin: 3.3em;
+  }
+
+  .classic-guitars__feature-card-header {
+    font-size: 1.45em;
+  }
+
+  .classic-guitars__feature-card img {
+    width: 11.6em;
+    height: 17.5em;
+  }
+
+  .classic-guitars__feature-card-button {
+    font-size: 1.4em;
+  }
+}

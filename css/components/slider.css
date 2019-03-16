@@ -1,0 +1,25 @@
+@import "./../style.css";
+@import "./../main-colors.css";
+
+.slider {
+  margin: 0 auto;
+  max-width: 1200px;
+  background: black;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.slider__img {
+  width: 100%;
+  animation: slider ease 2.5s;
+}
+
+@keyframes slider {
+  from {
+    opacity: 0
+  }
+  to {
+    opacity: 1
+  }
+}

@@ -1,0 +1,104 @@
+@import "./../style.css";
+@import "./../main-colors.css";
+
+:root {
+  --card-new-bg-color: var(--bombay);
+  --card-new-shadow-color: var(--tundora);
+  --card-new-border-color: var(--tundora);
+  --card-new-button-bg-color: var(--tundora), var(--jumbo), var(--alto);
+  --card-new-button-hover-color: var(--alto);
+}
+
+.block-cards {
+  margin: 10em auto;
+  display: flex;
+  justify-content: space-around;
+  flex-flow: wrap;
+  width: 80%;
+  height: auto;
+  border-radius: 0.5em;
+  background: var(--alto);
+  opacity: 0.8;
+  z-index: 1;
+  transform-style: preserve-3d;
+  perspective: 1000px;
+}
+
+.card-new {
+  position: relative;
+  margin: 2em;
+  box-sizing: border-box;
+  background: var(--card-new-bg-color);
+  box-shadow: 0.3em 0.4em 1.25em var(--card-new-shadow-color);
+  border-radius: 0.25em;
+  font-size: 1rem;
+  font-family: Calibri, sans-serif;
+  text-align: center;
+  transition: 0.25s;
+}
+
+.card-new__ribbon {
+  padding-left: 0.2em;
+  position: absolute;
+  left: -0.55em;
+  top: 4em;
+  width: 6em;
+  height: 3em;
+  line-height: 1em;
+  background: red;
+  color: var(--alto);
+  font-family: fantasy;
+  font-size: 1.4em;
+}
+
+.card-new__ribbon:before, .card-new__ribbon:after {
+  content: "";
+  position: absolute;
+}
+
+.card-new__ribbon:before {
+  top: -0.4em;
+  left: 0;
+  border-bottom: 0.4em solid black;
+  border-left: 0.55em solid transparent;
+}
+
+.card-new__ribbon:after {
+  top: 0;
+  right: -0.98em;
+  border-top: 1.5em solid transparent;
+  border-bottom: 1.5em solid transparent;
+  border-left: 1em solid red;
+}
+
+.card-new__button {
+  display: block;
+  margin: 0.7em 1em 0.8em 1em;
+  background: linear-gradient(to top, var(--card-new-button-bg-color));
+  color: black;
+  border-radius: 0.25em;
+  text-decoration: none;
+  font-size: 1.4em;
+  font-weight: 600;
+  line-height: 2em;
+  transition: 0.15s;
+}
+
+.fa-angle-double-right {
+  margin-left: 0.3em;
+  vertical-align: -0.1em;
+}
+
+.card-new:hover {
+  box-shadow: 0.8em 0.8em 0.8em var(--card-new-shadow-color);
+  transform: rotate3d(0, 10, 0, -10deg);
+}
+
+.card-new__button:hover {
+  color: var(--card-new-button-hover-color);
+}
+
+.card-new__button:active {
+  background: linear-gradient(to bottom, var(--card-new-button-bg-color));
+  transform: translateY(0.15em);
+}
