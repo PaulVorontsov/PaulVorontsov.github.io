@@ -2,17 +2,17 @@
   "lang": "en",
   "name": "Kibin custom made acoustic guitars",
   "short_name": "Kibin guitars",
-  "start_url": "https://github.com/PaulVorontsov.github.io.index.html",
+  "start_url": "https://PaulVorontsov.github.io/index.html",
   "display": "standalone",
   "description": "Website of famous Belarusian guitar master Andrei Kibin.",
   "icons": [
     {
-      "src": "https://github.com/PaulVorontsov.github.io/img/icon48x48.png",
+      "src": "https://PaulVorontsov.github.io/img/icon48x48.png",
       "sizes": "48x48",
       "type": "image/png"
     },
     {
-      "src": "https://github.com/PaulVorontsov.github.io/img/icon96x96.png",
+      "src": "https://PaulVorontsov.github.io/img/icon96x96.png",
       "sizes": "96x96",
       "type": "image/png"
     }

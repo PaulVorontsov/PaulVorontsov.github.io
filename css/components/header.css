@@ -160,6 +160,11 @@ a[class^="navigation"]:active, .navigation__button-drop:active {
     text-align: center;
   }
 
+  .main-header__text-logo {
+    margin: 0;
+    font-size: 1em;
+  }
+
   .navigation {
     position: inherit;
     top: 1em;
