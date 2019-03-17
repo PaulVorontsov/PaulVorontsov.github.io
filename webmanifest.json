@@ -4,6 +4,7 @@
   "short_name": "Kibin guitars",
   "start_url": "https://PaulVorontsov.github.io/index.html",
   "display": "standalone",
+  "background_color": "#707071",
   "description": "Website of famous Belarusian guitar master Andrei Kibin.",
   "icons": [
     {

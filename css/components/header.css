@@ -162,12 +162,12 @@ a[class^="navigation"]:active, .navigation__button-drop:active {
 
   .main-header__text-logo {
     margin: 0;
-    font-size: 1em;
+    font-size: 1.2em;
   }
 
   .navigation {
     position: inherit;
-    top: 1em;
+    top: 1.3em;
     width: 100%;
   }
 
