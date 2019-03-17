@@ -13,7 +13,7 @@
   --acoustic-guitars-proposal-color: var(--alto);
 }
 
-.wrap {
+.main__acoustic-guitars {
   margin: 0 auto;
   position: relative;
   max-width: 1200px;
@@ -22,17 +22,17 @@
   background-size: cover;
 }
 
-.wrap:before {
+.main__acoustic-guitars:before {
   background: black;
   opacity: 0.7;
 }
 
-.wrap:after {
+.main__acoustic-guitars:after {
   background: url("./../img/pattern.png");
   opacity: 0.2;
 }
 
-.wrap:before, .wrap:after {
+.main__acoustic-guitars:before, .main__acoustic-guitars:after {
   position: absolute;
   right: 0;
   left: 0;
@@ -126,7 +126,7 @@
 }
 
 @media screen and (max-width: 780px) {
-  .wrap {
+  .main__acoustic-guitars {
     padding-top: 5em;
   }
 

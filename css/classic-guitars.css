@@ -14,7 +14,7 @@
   --classic-guitars-bg-color: var(--alto);
 }
 
-.wrap {
+.main__classic-guitars {
   margin: 0 auto;
   padding: 0;
   position: relative;
@@ -24,17 +24,17 @@
   background-size: cover;
 }
 
-.wrap:before {
+.main__classic-guitars:before {
   background: black;
   opacity: 0.7;
 }
 
-.wrap:after {
+.main__classic-guitars:after {
   background: url("./../img/pattern.png");
   opacity: 0.2;
 }
 
-.wrap:before, .wrap:after {
+.main__classic-guitars:before, .main__classic-guitars:after {
   position: absolute;
   right: 0;
   left: 0;
@@ -129,7 +129,7 @@
 }
 
 @media screen and (max-width: 780px) {
-  .wrap {
+  .main__classic-guitars {
     padding-top: 5em;
   }
 

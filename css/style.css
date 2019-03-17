@@ -50,7 +50,7 @@ body {
   }
 }
 
-.main {
+.main__index {
   margin: 0 auto;
   padding: 0;
   position: relative;
@@ -64,17 +64,17 @@ body {
   background-size: cover;
 }
 
-.main:before {
+.main__index:before {
   background: black;
   opacity: 0.7;
 }
 
-.main:after {
+.main__index:after {
   background: url("./../img/pattern.png");
   opacity: 0.2;
 }
 
-.main:before, .main:after {
+.main__index:before, .main__index:after {
   position: absolute;
   right: 0;
   left: 0;

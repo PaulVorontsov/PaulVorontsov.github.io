@@ -70,7 +70,7 @@
   transition: 0.25s linear;
 }
 
-.a-style__picture.scale {
+.a-style__picture:hover {
   transform: scale(1.2);
 }
 
