@@ -1,0 +1,97 @@
+@import "./style.css";
+@import "./main-colors.css";
+@import "./components/header.css";
+@import "./components/footer.css";
+
+:root {
+  --contacts-header-color: var(--bombay);
+  --contacts-sub-header-color: var(--bombay);
+  --icon-address-color: var(--red);
+  --icon-phone-color: var(--green);
+  --icon-mail-color: var(--electric-violet);
+}
+
+.contacts {
+  margin: 0 auto;
+  padding: 0;
+  position: relative;
+  max-width: 1200px;
+  background: url("./../img/bg-section.jpg") no-repeat;
+  background-size: cover;
+  text-align: center;
+  font-family: Calibri, sans-serif;
+  font-size: 1rem;
+}
+
+.contacts:before {
+  background: black;
+  opacity: 0.7;
+}
+
+.contacts:after {
+  background: url("./../img/pattern.png");
+  opacity: 0.2;
+}
+
+.contacts:before, .contacts:after {
+  position: absolute;
+  right: 0;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  content: "";
+}
+
+.contacts__header {
+  position: relative;
+  margin: 0;
+  padding-top: 2em;
+  padding-bottom: 2em;
+  color: var(--contacts-header-color);
+  font-size: 2em;
+  z-index: 1;
+}
+
+.contacts__content {
+  position: relative;
+  z-index: 1;
+}
+
+h3[class^="contacts"] {
+  padding-top: 1em;
+  color: var(--contacts-sub-header-color);
+  font-size: 1.5em;
+}
+
+.contacts__content i {
+  padding-right: 0.5em;
+}
+
+.fa-map-marker-alt {
+  color: var(--icon-address-color);
+}
+
+.fa-phone {
+  color: var(--icon-phone-color);
+}
+
+.fa-envelope {
+  color: var(--icon-mail-color);
+}
+
+.contacts__content p {
+  color: white;
+  font-size: 1.15em;
+  font-weight: 600;
+}
+
+.contacts__text-mail {
+  margin: 0;
+  padding-bottom: 2em;
+}
+
+@media screen and (max-width: 780px) {
+  .contacts {
+    padding-top: 5em;
+  }
+}

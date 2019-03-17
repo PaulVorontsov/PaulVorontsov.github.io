@@ -1,0 +1,31 @@
+@import "./../style.css";
+@import "./../main-colors.css";
+
+:root {
+  --news-block-bg-color: var(--alto);
+  --news-block-header-color: var(--alto);
+}
+
+.news-block {
+  width: 31.5em;
+  font-size: 1rem;
+  text-align: center;
+  z-index: 1;
+}
+
+.news-block__header {
+  margin: 0;
+  padding-top: 4em;
+  padding-bottom: 4em;
+  color: var(--news-block-header-color);
+}
+
+.news-block img {
+  width: 100%;
+}
+
+@media screen and (max-width: 780px){
+  .news-block img {
+    width: 90%;
+  }
+}
