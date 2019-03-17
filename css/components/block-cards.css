@@ -34,7 +34,7 @@
   font-size: 1rem;
   font-family: Calibri, sans-serif;
   text-align: center;
-  transition: 0.25s;
+  transition: 2s;
 }
 
 .card-new__ribbon {
@@ -91,7 +91,7 @@
 
 .card-new:hover {
   box-shadow: 0.8em 0.8em 0.8em var(--card-new-shadow-color);
-  transform: rotate3d(0, 10, 0, -10deg);
+  transform: rotateY(-360deg);
 }
 
 .card-new__button:hover {
