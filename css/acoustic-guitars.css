@@ -78,8 +78,9 @@
   margin: 0;
   box-sizing: border-box;
   color: black;
+  font-size: 1.2em;
   font-weight: 600;
-  line-height: 1.5em;
+  line-height: 1.5;
   letter-spacing: 0.02em;
 }
 
@@ -136,10 +137,6 @@
 
   .acoustic-guitars__feature-card {
     margin: 3.3em;
-  }
-
-  .acoustic-guitars__feature-card-header {
-    font-size: 1.4em;
   }
 
   .acoustic-guitars__feature-card img {

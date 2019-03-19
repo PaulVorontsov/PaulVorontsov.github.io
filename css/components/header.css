@@ -168,7 +168,7 @@ a[class^="navigation"]:active, .navigation__button-drop:active {
 
   .navigation {
     position: inherit;
-    top: 1em;
+    top: 1.2em;
     width: 100%;
   }
 
