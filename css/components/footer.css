@@ -27,7 +27,7 @@
 
 .media-icons__header {
   margin: 0;
-  padding-top: 0.5em;
+  padding-top: 1.5em;
   color: var(--media-icons-header-color);
   font-size: 1.5em;
 }
@@ -61,6 +61,14 @@
   transition: 0.3s;
 }
 
+.footer__copyright {
+  margin: 0;
+  padding-bottom: 0.5em;
+  padding-top: 6em;
+  color: var(--footer-copyright-color);
+  font-weight: 600;
+}
+
 .media-icons__facebook:hover {
   background: var(--facebook-icon-hover-bg-color);
 }
@@ -76,12 +84,4 @@
 .media-icons a:hover i {
   color: white;
   transform: scale(0.75);
-}
-
-.footer__copyright {
-  margin: 0;
-  padding-bottom: 0.5em;
-  padding-top: 2em;
-  color: var(--footer-copyright-color);
-  font-weight: 600;
 }

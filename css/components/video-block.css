@@ -24,10 +24,6 @@
   color: var(--video-block-header-color);
 }
 
-.video-block__header i:hover {
-  opacity: 1;
-}
-
 .video-block__header i {
   padding-right: 0.5em;
   width: 1em;
@@ -41,4 +37,15 @@
 
 .video-block__sub-header {
   padding-top: 3em;
+}
+
+.video-block__header i:hover {
+  opacity: 1;
+}
+
+@media screen and (max-width: 780px){
+  .video-block__header i {
+    padding-right: 0.2em;
+    opacity: 1;
+  }
 }
